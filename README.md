@@ -55,4 +55,20 @@ This repository contains JavaScript utility functions aimed at enhancing web dev
   const flatArray = flatten([1, [2, [3, 4], 5], 6]);
   ```
 
+### 5. `listFormat(items, options)`
+
+- **Description**: Formats a list of strings into a single string, with options for sorting, limiting length, and removing duplicates. Useful for concatenating items in a user-friendly format, such as in summarizing social media reactions.
+- **Parameters**:
+  - `items`: An array of strings to be formatted.
+  - `options`: An object with optional keys `sorted`, `length`, and `unique`.
+- **Returns**: A formatted string based on the specified options.
+- **Usage Example**:
+  ```javascript
+  const formattedList = listFormat(["Bob", "Ben", "Tim", "Jane", "John"], {
+    length: 3,
+    unique: true,
+  });
+  // Output: "Bob, Ben, Tim and 2 others"
+  ```
+
 These functions provide utility and convenience for various common tasks in front-end development, from DOM manipulation to promise handling and array operations.
