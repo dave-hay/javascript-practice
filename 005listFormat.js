@@ -3,7 +3,7 @@
  * @param {{sorted?: boolean, length?: number, unique?: boolean}} [options]
  * @return {string}
  */
-export default function listFormat(items, options = {}) {
+function listFormat(items, options = {}) {
   if (items.length === 0) return "";
   if (items.length === 1) return items[0];
 
